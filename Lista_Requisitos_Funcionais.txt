@@ -1,0 +1,31 @@
+>>LISTA DE REQUISITOS FRONT END<<
+
+RF01 - Logo da gráfica
+RF02 - Menú do site
+RF03 - Campo de pesquisa
+RF04 - Campo de login e cadastro
+RF05 - Slideshow 
+RF06 - Listagem de serviço
+RF07 - História da empresa
+RF08 - Produtos vendidos na gráfica
+RF09 - Contatos da empresa
+RF10 - POP UP de novidade
+
+>>LISTA DE REQUISITOS BACK END<<
+
+RF01 - criação de base de dados para os produtos
+	*Produtos
+	- id
+	- código do produto
+	- Nome do produto
+	- descricao do produto
+	- preço
+	
+	*Categorias
+	- id 
+	- Descrição
+
+	*ImagensProdutos
+	- id
+	- descrição da imagem
+	- url da imagem.
