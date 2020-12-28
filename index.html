@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expresso Digital</title>
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- normalize  -->
+        <link rel="stylesheet" href="css/normalize.css">
+        
+        <!-- css customizado  -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        
+        <!-- start main-header -->
+        <div class="main-header">
+            <div class="main-header-login-register">
+                <div class="main-header-login-register-content">
+                    <a href="#" data-modal-target="#main-modal" id="main-header-login-link">Login</a><span> / </span>
+                    <a href="#" data-modal-target="#main-modal-register" id="main-header-register-link">Cadastre-se</a>
+                </div>
+            </div>
+
+            <!--  start login modal -->
+            <div id="main-modal" class="main-modal">
+                <form class="modal-content" action="" method="">
+                    <div class="imgcontainer">
+                        <i data-close-button class="fa fa-window-close close" id="close" alt="fechar" title="fechar"></i>
+                        <img src="imagens/logo-img.jpeg" class="avatar" alt="Expresso Digital" title="Expresso Digital">
+                    </div>
+
+                    <div class="container">
+                        <header>
+                            <h1>Seja Bem vindo a Expresso Digital!</h2>
+                        </header>
+                    </div>
+
+                    <div class="container">
+                        <label for="email"><b>Email</b></label>
+                        <input type="email" placeholder="Seu e-mail" name="email" id="email" required>
+
+                        <label for="password"><b>Senha</b></label>
+                        <input type="password" placeholder="Sua senha" name="password" id="password" required>
+
+                        <button type="submit">Login</button>
+                    </div>
+
+                    <div class="container">
+                        <span>Não tem uma conta ainda?</span>
+                        <button data-modal-target="#main-modal-register" type="button" class="cancelbtn">Registre-se</button>
+                        <span class="psw">Esqueceu a <a href="#" >senha?</a></span>
+                    </div>
+
+                </form>
+            </div>
+            <!--  end login modal -->
+            
+            <!--  start register modal -->
+            <div id="main-modal-register" class="main-modal-register">
+                <form id="regForm" action="">
+                    
+                    <h1>Criar Conta</h1>
+                    
+                    <div class="tab">Nome completo
+                      <p><input type="text" placeholder="Nome..." name="nome" oninput="this.className = ''"></p>
+                      <p><input type="text" placeholder="Sobrenome..." name="sobreN" oninput="this.className = ''"></p>
+                    </div>
+                    
+                    <div class="tab">CPF
+                      <p><input placeholder="Informe seu cpf" name="cpf" oninput="this.className = ''"></p>
+                    </div>
+                    
+                    <div class="tab">Informações do usuário
+                      <p><input type="number" placeholder="Dia" name="d" oninput="this.className = ''"></p>
+                      <p><input type="number" placeholder="Mês" name="m" oninput="this.className = ''"></p>
+                      <p><input type="number" placeholder="Ano"  name="a" oninput="this.className = ''"></p>
+                    </div>
+
+                    <div class="tab">Endereço
+                        <p><input type="text" placeholder="Cidade" name="cidade" oninput="this.className = ''"></p>
+                        <p><input type="text" placeholder="Nome da rua " name="rua" oninput="this.className = ''"></p>
+                        <p><input type="text" placeholder="Bairro, Avenida ou Travessa " name="bairro" oninput="this.className = ''"></p>
+                        <p><input type="number" placeholder="numero"  name="numero" oninput="this.className = ''"></p>
+
+                        <p><input type="text" placeholder="Cep"  name="cep" oninput="this.className = ''"></p>
+                      </div>
+
+                    
+                    <div class="tab">Informações de Login
+                      <p><input type="email" placeholder="E-mail" name="email" oninput="this.className = ''"></p>
+                      <p><input  type="password"  name="password" placeholder="Senha" oninput="this.className = ''"></p>
+                      <p><input  type="password"  name="password" placeholder="Senha novamente" oninput="this.className = ''"></p>
+
+                      <button type="submit" class="btn-submit"> Registar</button>
+                    </div>
+                    
+                    <div style="overflow:auto;">
+                      <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Voltar</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Avançar</button>
+                      </div>
+                    </div>
+                    
+                    <div style="text-align:center;margin-top:40px;">
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                    </div>
+                    
+                </form>
+            </div>
+            <!--  end register modal -->
+
+            <div id="overlay"></div>
+
+            <!-- start main-header-content -->
+            <header class="main-header-content">
+                <div class="main-header-content-logo-saerch">
+                    <div class="main-header-logo-saerch-content">
+                        <!-- logo -->
+                        <a href="#"><img src="imagens/logo.jpeg" alt="Expresso Digital" title="Expresso Digital"></a>
+                        
+                        <!-- search -->
+                        <div class="main-header-content-form-search">
+                            <form action="" method="">
+                                <input type="text" placeholder="Busca por nome" name="search" autofocus>
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end main-header-content -->
+
+        </div> 
+        <!-- end main-header -->
+
+        <!-- start main-nav -->
+        <div class="main-nav">
+            <div class="main-nav-content">
+                <nav class="main-nav-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">A Empresa</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                </nav>
+
+                <!-- star menu-scren-mobile -->
+                <nav class="main-nav-menu-mobile">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">A Empresa</a></li>
+                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Contatos</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+        <!-- end main-nav -->
+
+
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
