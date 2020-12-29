@@ -77,6 +77,28 @@
     position: relative;
 }
 
+img.avatar{
+    width: 120px;
+}
+
+@media (max-width:800px) {
+    img.avatar{
+        width: 100px;
+    }
+
+    .main-modal .container header h1{
+        font-size: 1.5em !important;
+    }
+}
+
+@media (max-width:673px) {
+    .imgcontainer{
+        text-align: center;
+        margin: 10px 0 5px 0;
+        position: relative;
+    }
+}
+
 .close{
     position: absolute;
     top: 0;
@@ -93,15 +115,11 @@
     cursor: pointer;
 }
 
-img.avatar{
-    width: 25%;
-    border-radius: 50%;
-}
-
 .main-modal .container header{
     text-align: center; 
     color: var(--black); 
     font-weight: bold;
+    padding: 0 10px;
 }
 
 .main-modal .container header h1{
@@ -353,6 +371,7 @@ img.avatar{
     background-color: transparent;
     padding: 5px;
     font-size: 1.2em;
+    font-family: var(--font-secundary);
 }
 
 .main-header-content-form-search form input:focus{
