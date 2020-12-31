@@ -77,6 +77,19 @@
     position: relative;
 }
 
+img.avatar{
+    width: 110px;
+}
+
+@media (max-width: 800px) {
+    img.avatar{
+        width: 100px;
+    }
+    .main-modal .container header h1{
+        font-size: 1.5em !important;
+    }
+}
+
 .close{
     position: absolute;
     top: 0;
@@ -91,11 +104,6 @@
 .close:focus {
     opacity: 0.8;  
     cursor: pointer;
-}
-
-img.avatar{
-    width: 25%;
-    border-radius: 50%;
 }
 
 .main-modal .container header{
